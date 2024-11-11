@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .navbar-links {
@@ -35,21 +35,14 @@
 }
 
 .navbar-links a:hover {
-    color: white;
+    color: red;
     text-decoration: underline;
 }
 .navbar-menu-toggle{
     display: none;
 }
 
-@media screen and (max-width:700px) {
-    .navbar-menu-toggle{
-        display: block;
-    }
-    .navbar-links{
-        display: none;
-    }
-}
+
 
 .side-navbar{
     background-color: rgb(2, 2, 61);
@@ -61,6 +54,7 @@
     padding: 20px;
     color: white;
     transition: 2s;
+    z-index: 3;
 }
 .side-navbar-link{
     margin-bottom: 30px;
@@ -72,4 +66,259 @@
 }
 .side-navbar-link a:hover{
     color: rgb(198, 5, 5);
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+.header-button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+    margin-top: 10px;
+}
+.header-button:hover{
+    background-color: blue;
+    color: white;
+}
+.img{
+    width: 300px;
+    height: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+.service-container-2 div{
+    background-color: aliceblue;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.na{
+    padding: 20px;
+}
+.New-Arrival-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+}
+.New-Arrival-1{
+    position: relative;
+    flex-basis: 20%;
+}
+.New-Arrival-container button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.family{
+    text-align: center;
+    padding: 10px;
+}
+.fb{
+    padding: 10px;
+}
+.search{
+    padding: 10px;
+    width: 80vw;
+    border-radius: 10px;
+    
+}
+.family button{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+}
+footer{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+footer h6{
+    padding: 20px;
+    font-size: large;
+}
+.collection{
+    width: auto;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+}
+.search-collection{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    
+.search-collection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#search{
+    
+    width: 80vw;
+    padding: 10px;
+    margin-left: 100px;
+
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0px;
+    display: no;
+}
+.popup{
+    position: absolute;
+    padding: 40px;
+    left: 28%;
+    top: 30%;
+    z-index: 2;
+    width: 40%;
+    background-color: red;
+    border-radius: 10px;
+    display: no;
+}
+.popup h2{
+    text-align: center;
+}
+#book-title-input{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    border-bottom: solid black 2px;
+}
+#book-author-input{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    border-bottom: solid black 2px;
+    
+}
+#book-description{
+    background: transparent;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+    border: solid black 2px;
+    
+}
+#add-book{
+    width: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+}
+#cancel-book{ width: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+}
+.popup input::placeholder{
+    color: black;
+}
+.popup textarea::placeholder{
+    color: black;
+}
+.popup input:focus{
+    outline: none;
+}
+.popup textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .img{
+        display: none;
+    }
+    .header{
+        text-align: right;
+        padding-left: 100px;
+        padding-right: 0;
+    }
+    .service-container-1{
+        display: none;
+    }
 }
